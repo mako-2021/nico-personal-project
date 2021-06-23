@@ -35,17 +35,18 @@ const onSceneReady = (scene) => {
 /**
  * Will run on every frame render.  We are spinning the box on y-axis.
  */
-const onRender = (scene) => {
-  if (box !== undefined) {
-    var deltaTimeInMillis = scene.getEngine().getDeltaTime()
-    const rpm = 10
-    box.rotation.y += (rpm / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000)
-  }
-}
+// const onRender = (scene) => {
+//   if (box !== undefined) {
+//     var deltaTimeInMillis = scene.getEngine().getDeltaTime()
+//     const rpm = 10
+//     box.rotation.y += (rpm / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000)
+//   }
+// }
+// onRender={onRender}
 
 const SceneDisplay = () => (
-  <div>
-    <SceneComponent antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" />
+  <div className="container">
+    <SceneComponent antialias onSceneReady={onSceneReady} id="my-canvas" className="scene" />
   </div>
 )
 
