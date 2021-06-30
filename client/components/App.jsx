@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import SceneDisplay from './SceneDisplay'
 // import BoxScene from './SpinningBox'
 
